@@ -1,7 +1,8 @@
-from datetime import datetime
+from sqlalchemy.sql.sqltypes import TIMESTAMP
+from sqlalchemy.sql.expression import text
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
 from sqlalchemy.dialects.postgresql import UUID
-from db_config import Base
+from db_conn.db_config import Base
 from uuid import uuid4
 
 class Book(Base):
@@ -21,3 +22,5 @@ class Review(Base):
     rating = Column(Integer, index=True)
     title = Column(String, index=True)
     pub_year = Column(Integer, index=True)
+    created_at = Column(TIMESTAMP(timezone=True),server_default=text('now()'),index=True)
+    
