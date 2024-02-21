@@ -1,7 +1,7 @@
 ## Book Review System.
 
-The Book review system is system for enthusitic readers who wants to find book info with authentic reviews.
-The readers can even share theie personal review for a book/Novel.
+The Book review system is system for enthusiastic readers who wants to find book info with authentic reviews.
+The readers can even share their review and their experience for a book/Novel.
 
 ## API References: 
 
