@@ -34,10 +34,10 @@ The readers can even share their review and their experience for a book/Novel.
 | :-------- | :------- | :-------------------------------- |
 | `author`      | `integer` | This will make sure that you be given book/novel for a specific year. |
 
-#### Get Book by providing author name.
+#### Get Book by providing title name.
 
 ```http
-  GET /api/view_review/{title}
+  GET /api/review/{title}
 ```
 
 | Parameter | Type     | Description                       |
@@ -45,12 +45,12 @@ The readers can even share their review and their experience for a book/Novel.
 | `title`   | `string` | This endpoint will retriev all the review ralated to a particular book/novel. |
 
 ```http
-  POST /api/submit_review
+  POST /api/new_review
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `submit_review`| `string` | This endpoint will let you to submit a review for a specific book/novel.|
+| `new_review`| `string` | This endpoint will let you to submit a review for a specific book/novel.|
 
 ```http
   POST /api/add_book
